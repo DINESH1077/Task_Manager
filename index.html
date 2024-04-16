@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="head">
+        <header>
+            <h1>Task Manager</h1>
+        </header>
+    </div>
+    <div class="input">
+        <label for="taskInput">Task:</label>
+        <input type="text" id="taskInput" placeholder="Enter the Task"\required>
+        <br>
+        <br>
+        <label for="descriptionInput">Description:</label>
+        <input type="text" id="descriptionInput" placeholder="Enter the Description"\required>
+        <br>
+        <br>
+        <label for="durationInput">Duration:</label>
+        <input type="text" id="durationInput" placeholder="Enter the Duration"\required>
+    </div>
+    <br>
+    <br>
+    <select class="sel">
+        <option value="">Select</option>
+        <option value="Meeting">Meeting</option>
+        <option value="Project-abc">Project-abc</option>
+        <option value="Personal Break">Personal Break</option>
+    </select>
+    <div id="stopwatch">
+        <h1>00:00:00</h1>
+    </div>
+    <table class="tbl" >
+        <tr>
+            <th>Task</th>
+            <th>Description</th>
+            <th>Duration</th>
+            <th>Delete</th>
+        </tr>
+        <tbody class="tbody">
+        </tbody>
+    </table>
+    <br>
+    <div class="output"></div>
+    <button id="add">Add</button>
+    <button id="startstop" onclick="startstop()">Start</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="filterWork()">Filter</button>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+ 
